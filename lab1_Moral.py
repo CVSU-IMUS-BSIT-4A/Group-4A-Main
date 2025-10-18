@@ -20,12 +20,12 @@ class ItemUpdate(BaseModel):
 
 # In-memory store
 items: Dict[int, Dict] = {
-    1: {"Name": "Intel i5 11th Gen", "Price": 10000.0, "Description": "Intel i5 11th Gen is a processor that is used in laptops and desktops."},
-    2: {"Name": "AMD Ryzen 5 5600G", "Price": 10000.0, "Description": "AMD Ryzen 5 5600G is a processor that is used in laptops and desktops."},
-    3: {"Name": "AMD Ryzen 7 5800H", "Price": 10000.0, "Description": "AMD Ryzen 7 5800H is a processor that is used in laptops and desktops."},
-    4: {"Name": "AMD Ryzen 7 1800H", "Price": 10000.0, "Description": "AMD Ryzen 7 5800H is a processor that is used in laptops and desktops."},
-    5: {"Name": "AMD Ryzen 7 4800H", "Price": 10000.0, "Description": "AMD Ryzen 7 5800H is a processor that is used in laptops and desktops."},
-    6: {"Name": "PS5", "Price": 10000.0, "Description": "Playstation game console."}
+    1: {"Name": "Intel Core i5-11400F", "Price": 9500.0, "Description": "6-core 11th Gen Intel processor ideal for mid-range gaming and productivity."},
+    2: {"Name": "AMD Ryzen 5 5600G", "Price": 9800.0, "Description": "6-core CPU with integrated Radeon graphics, great for budget gaming PCs."},
+    3: {"Name": "AMD Ryzen 7 5800X", "Price": 16500.0, "Description": "8-core high-performance CPU for gaming and heavy multitasking workloads."},
+    4: {"Name": "Intel Core i7-12700K", "Price": 21000.0, "Description": "12th Gen Intel processor with hybrid architecture for top-tier performance."},
+    5: {"Name": "NVIDIA GeForce RTX 3060", "Price": 23000.0, "Description": "Mid-range graphics card capable of ray tracing and smooth 1080p/1440p gaming."},
+    6: {"Name": "Corsair Vengeance LPX 16GB DDR4", "Price": 4500.0, "Description": "High-speed memory kit for gaming PCs and workstation builds."},
 }
 
 
