@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Body
+from fastapi import FastAPI, HTTPException, Body, Response
 from pydantic import BaseModel, Field
 from typing import Optional, Dict
 
@@ -72,6 +72,11 @@ def update_item(item_id: int, update: ItemUpdate = Body(..., example={"Name": "U
     return {"id": item_id, **items[item_id]}
 
 
-
+@app.delete("/items/{item_id}", status_code=204)
+def delete_item(item_id: int):
+    if item_id not in items:
+        raise HTTPException(status_code=404, detail="Item not found")
+    del items[item_id]
+    return Response(status_code=204)
 
 
